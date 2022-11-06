@@ -1,0 +1,20 @@
+
+
+<h1>These are the items in Market</h1>
+<table border= 1 >
+    {% for user in userdetails %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
+<br>
+{% extends 'base.html' %} 
+{% block body %}
+<a href="create">To create a product</a>
+<br>
+
+{% endblock %}

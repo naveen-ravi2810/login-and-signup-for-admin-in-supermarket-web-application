@@ -1,0 +1,23 @@
+{% block head %}
+<h1 style="text-align:center;font-style:italic;font-size: 80px; " >LISTS OF PRODUCTS</h1>
+{% endblock %}
+
+
+{% block body %}
+
+<p><h3>Enter new Product in this column</h3></p>
+<br>
+<form method="post">
+    proname <input type="text" name="proname"/>
+    <br>
+    procode <input type="text" name="procode"/>
+    <br>
+    price <input type="number" name="price"/>
+    <br>
+    <input type="submit">
+
+</form>
+<br>
+<a href="lists">to see the products</a>
+
+{% endblock %}

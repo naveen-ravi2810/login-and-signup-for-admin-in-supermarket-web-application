@@ -1,0 +1,21 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<h1 style="text-align:center">Login Page For ADMIN</h1>
+{% endblock %}
+
+
+{% block body %}
+
+<form action = "/validate" method = "post">  
+    <table>  
+   <tr><td>Name</td>  
+   <td><input type ="text" name ="uname"></td></tr>  
+   <tr><td>Password</td>  
+   <td><input type ="password" name ="pass"></td></tr>  
+   <tr><td><input type = "submit"></td></tr>  
+</table>  
+ </form>
+
+
+{% endblock %}
